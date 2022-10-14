@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import './index.scss'
 import { useNavigate } from "react-router-dom";
 
 export default function Sorveteria() {
@@ -39,7 +38,9 @@ export default function Sorveteria() {
 
     return(
         <main>
-            Sorveteria
+            <h1>
+                Sorveteria
+            </h1>
 
             <div>
                 Gramas: <input type='number' value={gramas} onChange={e => setGramas(Number(e.target.value))}/>
@@ -65,7 +66,7 @@ export default function Sorveteria() {
                     
                 }
             }}>
-            Voltar pra home
+            VOLTAR
         </button>
     </div>
     </section>

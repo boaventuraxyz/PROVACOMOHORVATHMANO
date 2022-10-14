@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import './index.scss'
+
 
 export default function SalarioLiquido() {
     const [salario, setSalario] = useState('')
@@ -71,7 +71,7 @@ export default function SalarioLiquido() {
                     
                 }
             }}>
-            Voltar pra home
+           VOLTAR
         </button>
         </main>
     )

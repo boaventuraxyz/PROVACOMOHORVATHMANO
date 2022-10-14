@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import './index.scss'
+
 import { useNavigate } from "react-router-dom";
 
 
@@ -13,10 +13,16 @@ export default function Signo() {
 
     function Calcular() {
         try{
-        if(mes == 'setembro' && dia >= 23 || 'outubro' && dia <=22){
+            if(dia<=0 || dia >31){
+                setFinal("dia invalido")
+
+
+            }
+        else if(mes == 'setembro' && dia >= 23 && dia >=0|| mes =='outubro' && dia <=22 && dia <= 31){
             setFinal('seu signo é libra doidão')
 
         }
+        
         else{
             setFinal('seu signo n é libra mané')
         }}
@@ -35,10 +41,12 @@ export default function Signo() {
 
     return(
         <main>
-            signo
+            <h1>
+                Signo
+            </h1>
 
             <div>
-                mês  <input type='text' value={mes} onChange={e => setMes(String(e.target.value))}/>
+                mês  <input type='text' value={mes} onChange={e => setMes(e.target.value)}/>
             </div>
 
             
@@ -64,7 +72,7 @@ export default function Signo() {
                     
                 }
             }}>
-            Voltar pra home
+            VOLTAR
         </button>
     </div>
     </section>

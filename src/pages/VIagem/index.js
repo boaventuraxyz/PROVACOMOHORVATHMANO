@@ -37,21 +37,21 @@ export default function Viagem(){
 
     return(
         <main className="page-acai">
-            viagem
+            <h1>Paradas</h1>
 
             <div>
-            <label>capacidade</label>  <input className="cx1" type='number' value={capac} onChange={e => setCapac(Number(e.target.value))}/>
+            <label>Capacidade</label>  <input className="cx1" type='number' value={capac} onChange={e => setCapac(Number(e.target.value))}/>
             </div>
 
             
             <div>
-            <label>consumo</label> <input className="cx2" type='number' value={consumo} onChange={e => setConsumo
+            <label>Consumo</label> <input className="cx2" type='number' value={consumo} onChange={e => setConsumo
                     (Number(e.target.value))}/>
             </div>
 
             
             <div>
-            <label>distância</label><input className="cx3" type='number' value={dist} onChange={e => setDist(Number(e.target.value))}/>
+            <label>Distância</label><input className="cx3" type='number' value={dist} onChange={e => setDist(Number(e.target.value))}/>
             </div>
 
            
@@ -72,7 +72,7 @@ export default function Viagem(){
                     
                 }
             }}>
-            Voltar pra home
+            VOLTAR
         </button>
     </div>
     </section>

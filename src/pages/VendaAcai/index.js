@@ -1,15 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import './index.scss'
+
 import { useNavigate } from "react-router-dom";
 
 export default function Acai() {
-    const [qtdPeq, setQtdPeq] = useState(0)
-    const [ qtdMed, setQtdMed] = useState(0)
-    const [qtdGrande, setQtdGrande] = useState(0)
+    const [qtdPeq, setQtdPeq] = useState()
+    const [ qtdMed, setQtdMed] = useState()
+    const [qtdGrande, setQtdGrande] = useState()
 
-    const [desc, setDesc] = useState(0)
-    const [total, setTotal] = useState(0)
+    const [desc, setDesc] = useState()
+    const [total, setTotal] = useState()
 
     function Calcular() {
         try{
@@ -41,7 +41,9 @@ export default function Acai() {
 
     return(
         <main className="page-acai">
-            Açaí
+           <h1>
+            Acai
+           </h1>
 
             <div>
             <label>Quantidade Pequena:</label>  <input className="cx1" type='number' value={qtdPeq} onChange={e => setQtdPeq(Number(e.target.value))}/>
@@ -79,7 +81,7 @@ export default function Acai() {
                     
                 }
             }}>
-            Voltar pra home
+            VOLTAR
         </button>
     </div>
     </section>

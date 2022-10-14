@@ -32,6 +32,9 @@ export default function Orca() {
     const navigate = useNavigate();
     return (
         <main>
+            <h1>
+                Orçamento
+            </h1>
             <input value={ganhos} placeholder="ganhos" type="number" onChange={(e) => setGanhos(e.target.value)} />
             <input type="number" value={gastos} placeholder="gastos" onChange={(e) => setGastos(e.target.value)} />
 
@@ -46,7 +49,7 @@ export default function Orca() {
                     
                 }
             }}>
-            Voltar pra home
+            VOLTAR
         </button>
         </main>
     )

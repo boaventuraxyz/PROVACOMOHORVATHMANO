@@ -30,10 +30,14 @@ export default function Cinema() {
     const navigate = useNavigate();
 	return (
 		<main>
+            <h1>Cinema</h1>
 			<input type="number" value={meia} onChange={(e) => setMeia(Number(e.target.value))} placeholder="meia" />
 			<input type="number" value={inteira} onChange={(e) => setInteira(Number(e.target.value))} placeholder="inteira" />
 			<input type="text" value={dia} onChange={(e) => setDia(e.target.value)} placeholder="dia" />
+            <div>
+                <label>Brasil?</label>
 			<input type="checkbox" checked={nacionalidade} onChange={(e) => setNacionalidade(e.target.checked)} placeholder="nacionalidade" />
+            </div>
             --o total é {total}
         
             <button
@@ -45,7 +49,7 @@ export default function Cinema() {
                     
                 }
             }}>
-            Voltar pra home
+            VOLTAR
         </button>
 		</main>
 	);

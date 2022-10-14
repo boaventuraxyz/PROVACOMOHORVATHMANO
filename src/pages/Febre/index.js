@@ -37,7 +37,9 @@ export default function Febre(){
 
     return(
         <main>
-            Febre
+            <h1>
+                Febre
+            </h1>
             <input placeholder="temperatura" value={temp} onChange={(e) => setTemp(e.target.value)} />
 
             to com febre? {res}
@@ -51,7 +53,7 @@ export default function Febre(){
                     
                 }
             }}>
-            Voltar pra home
+            VOLTAR
         </button>
         </main>
     )

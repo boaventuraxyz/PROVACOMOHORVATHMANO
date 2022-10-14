@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../../common.scss"
 
 
 export default function Index(){
@@ -20,7 +20,7 @@ export default function Index(){
                     
                 }
             }}>
-            Venda acai 
+            AÇAI 
         </button>
     </div>
     </section>
@@ -38,7 +38,7 @@ export default function Index(){
                     
                 }
             }}>
-           libra or not
+           LIBRA
         </button>
     </div>
     
@@ -58,7 +58,7 @@ export default function Index(){
                     
                 }
             }}>
-          Joguinho Boku no pico
+          SORVETERIA
         </button>
     </div>
 
@@ -74,7 +74,7 @@ export default function Index(){
                     
                 }
             }}>
-            Seu Salario Liquidio 
+            SALARIO 
         </button>
     </div>
     
@@ -93,7 +93,7 @@ export default function Index(){
                     
                 }
             }}>
-            Seuvagem
+            PARADAS
         </button>
     </div>
     
@@ -107,7 +107,7 @@ export default function Index(){
                     
                 }
             }}>
-            febri
+            FEBRE
         </button>
     </div>
 
@@ -125,7 +125,7 @@ export default function Index(){
                     
                 }
             }}>
-            Orçamento familiar
+            ORÇAMENTO
         </button>
     </div>
     </section>
@@ -140,7 +140,7 @@ export default function Index(){
                     
                 }
             }}>
-            cinema
+            INGRESSO
         </button>
     </div>
 
