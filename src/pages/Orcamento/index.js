@@ -33,7 +33,7 @@ export default function Orca() {
     return (
         <main>
             <h1>
-                Orçamento
+                Orçamentogfhjghjghj
             </h1>
             <input value={ganhos} placeholder="ganhos" type="number" onChange={(e) => setGanhos(e.target.value)} />
             <input type="number" value={gastos} placeholder="gastos" onChange={(e) => setGastos(e.target.value)} />
