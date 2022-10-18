@@ -9,6 +9,7 @@ import Febre from "./pages/Febre";
 import Orca from "./pages/Orcamento";
 import Cinema from "./pages/Cinema"
 import Naturais from "./pages/naturais"
+import Linha from "./pages/Linha"
 
 export default function Index() {
 	return (
@@ -24,6 +25,7 @@ export default function Index() {
                 <Route path='/Orcamento' element={<Orca />}></Route>
                 <Route path='/Cinema' element={<Cinema/>}></Route>
 				<Route path='/naturais' element={<Naturais/>} />
+				<Route path='/linha' element={<Linha/>} />
 			</Routes>
 		</BrowserRouter>
 	);

@@ -157,6 +157,20 @@ export default function Index(){
         </button>
     </div>
 
+    <div className="div-btn-febre">
+        <button
+            className="btn-simple-febre"
+            onClick={async () => {
+                try {
+                    navigate("/linha")
+                } catch (err) {
+                    
+                }
+            }}>
+                LINHA
+        </button>
+    </div>
+
     </main>
     
     );
