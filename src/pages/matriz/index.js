@@ -9,9 +9,6 @@ export default function Febre(){
 
 
     function Linha(){
-        try{
-
-        
         let x = [];
         let e = 0
 
@@ -19,10 +16,7 @@ export default function Febre(){
             x[e] = "*"
             e++
         }
-        setRes(x)}
-        catch{
-            setRes("sexo")
-        }
+        setRes(x)
     }
 
     useEffect(() => {

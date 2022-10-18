@@ -9,13 +9,25 @@ export default function Febre(){
     const[resposta, setResposta] = useState();
 
     function Naturais() {
+        try{
+
+        if(inicio>=0 && fim<=9){
+
+        
         let x = [];
         let e = 0;
         for(let i = inicio; i <= fim; i++){
             x[e] = i;
             e++;
         }
-        setResposta(x)
+        setResposta(x)}
+    else{
+        setResposta("apenas números naturais(de 0 à 9)")
+    }}
+
+        catch{
+            setResposta("sexo")
+        }
     }
 
        
