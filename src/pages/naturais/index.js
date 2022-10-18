@@ -8,14 +8,15 @@ export default function Febre(){
 
     const[resposta, setResposta] = useState();
 
-        function Naturais(){
-           let x = [inicio];
-             for(let i = 1; inicio <= fim ; i++){
-               x[i] = x
-                x++
-            }
-            setResposta([x])
+    function Naturais() {
+        let x = [];
+        let e = 0;
+        for(let i = inicio; i <= fim; i++){
+            x[e] = i;
+            e++;
         }
+        setResposta(x)
+    }
 
        
         
