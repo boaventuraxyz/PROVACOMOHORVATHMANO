@@ -8,6 +8,9 @@ export default function Matrizs(){
     const [resposta, steResposta] = useState([]);
 
     function Matriz() {
+        try{
+
+        
         let matriz = [];
         let array =[];
 
@@ -16,11 +19,15 @@ export default function Matrizs(){
             
             for (let j = 0; j < alt; j++) {
                 matriz[j] = new Array (array);
-            }
+            }}
+            steResposta(matriz);
+        }
+        catch{
+            steResposta("ugisaefgdsafhgiuo")
         }
         
 
-        steResposta(matriz);}
+        }
 
     const navigate = useNavigate()
     return(
