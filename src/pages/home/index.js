@@ -171,6 +171,21 @@ export default function Index(){
         </button>
     </div>
 
+
+    <div className="div-btn-febre">
+        <button
+            className="btn-simple-febre"
+            onClick={async () => {
+                try {
+                    navigate("/Matriz")
+                } catch (err) {
+                    
+                }
+            }}>
+                MATRIZ
+        </button>
+    </div>
+
     </main>
     
     );

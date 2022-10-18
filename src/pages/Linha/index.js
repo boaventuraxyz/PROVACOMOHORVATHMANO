@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Febre(){
+export default function Linhas(){
     const[qtd, setQtd] = useState()
 
     const[res, setRes] = useState()

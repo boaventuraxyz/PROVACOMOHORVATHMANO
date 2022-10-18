@@ -1,34 +1,36 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Febre(){
-    const[qtd, setQtd] = useState()
+export default function Matrizs(){
+    const [base, setbase] = useState();
+    const [alt, setaltura] = useState();
+    const [resposta, steResposta] = useState([]);
 
-    const[res, setRes] = useState()
+    function Matriz() {
+        let matriz = [];
+        let array =[];
 
-
-    function Linha(){
-        let x = [];
-        let e = 0
-
-        for(let i = 1; i <= qtd; i++){
-            x[e] = "*"
-            e++
+        for (let i = 0; i < base; i++) {
+            array[i] = "*";   
+            
+            for (let j = 0; j < alt; j++) {
+                matriz[j] = new Array (array);
+            }
         }
-        setRes(x)
-    }
+        
 
-    useEffect(() => {
-        Linha()
-    }, [qtd])
+        steResposta(matriz);}
+
     const navigate = useNavigate()
     return(
         <main>
-            <h1>Linha</h1>
+            <h1>Matriz</h1>
 
-            <input value={qtd} onChange={(e) => setQtd(e.target.value)} />
-            <input value={res} disabled="disabled" />
+            <input type="text"  placeholder='base' value={base}  onChange={ e => setbase(Number(e.target.value))} />
+            <input type="text"  placeholder='altura' value={alt}  onChange={ e => setaltura(Number(e.target.value))} />
+            <button classname='btn-smp'onClick={Matriz}> Faça!</button>
+            <div className='forminha'>{resposta.map(item => <p>{ item }</p>)}</div>
 
             <div className="div-btn-acai">
         <button
