@@ -143,6 +143,19 @@ export default function Index(){
             INGRESSO
         </button>
     </div>
+    <div className="div-btn-febre">
+        <button
+            className="btn-simple-febre"
+            onClick={async () => {
+                try {
+                    navigate("/naturais")
+                } catch (err) {
+                    
+                }
+            }}>
+            NUMEROS NATURAIS
+        </button>
+    </div>
 
     </main>
     

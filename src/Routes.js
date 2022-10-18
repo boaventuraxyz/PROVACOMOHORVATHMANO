@@ -8,6 +8,7 @@ import Viagem from "./pages/VIagem";
 import Febre from "./pages/Febre";
 import Orca from "./pages/Orcamento";
 import Cinema from "./pages/Cinema"
+import Naturais from "./pages/naturais"
 
 export default function Index() {
 	return (
@@ -22,6 +23,7 @@ export default function Index() {
                 <Route path="/febre" element={<Febre />}></Route>
                 <Route path='/Orcamento' element={<Orca />}></Route>
                 <Route path='/Cinema' element={<Cinema/>}></Route>
+				<Route path='/naturais' element={<Naturais/>} />
 			</Routes>
 		</BrowserRouter>
 	);
