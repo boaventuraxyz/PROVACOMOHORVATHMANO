@@ -11,6 +11,7 @@ import Cinema from "./pages/Cinema"
 import Naturais from "./pages/naturais"
 import Linha from "./pages/Linha"
 import Matrizs from "./pages/matriz";
+import Cafe from "./pages/Cafe";
 
 export default function Index() {
 	return (
@@ -28,6 +29,7 @@ export default function Index() {
 				<Route path='/naturais' element={<Naturais/>} />
 				<Route path='/linha' element={<Linha/>} />
 				<Route path='/Matriz' element={<Matrizs/>} />
+				<Route path='/Cafe' element={<Cafe/>} />
 			</Routes>
 		</BrowserRouter>
 	);

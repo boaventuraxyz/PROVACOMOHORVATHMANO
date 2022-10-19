@@ -23,6 +23,7 @@ export default function Cinema() {
             }
         }
     }
+    
     useEffect(() => {
         Compra()
     }, [inteira, meia, nacionalidade, dia])
