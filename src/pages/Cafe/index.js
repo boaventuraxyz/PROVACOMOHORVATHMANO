@@ -9,7 +9,7 @@ export default function Cafe(){
     const [ml, setMl] = useState();
     const [total, setTotal] = useState();
 
-    const navigate = useNavigate;
+    const navigate = useNavigate();
 
     function Cafes(){
         try{
