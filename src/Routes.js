@@ -12,6 +12,7 @@ import Naturais from "./pages/naturais"
 import Linha from "./pages/Linha"
 import Matrizs from "./pages/matriz";
 import Cafe from "./pages/Cafe";
+import Juros from "./pages/Montante";
 
 export default function Index() {
 	return (
@@ -30,6 +31,7 @@ export default function Index() {
 				<Route path='/linha' element={<Linha/>} />
 				<Route path='/Matriz' element={<Matrizs/>} />
 				<Route path='/Cafe' element={<Cafe/>} />
+				<Route path='/Juros' element={<Juros/>} />
 			</Routes>
 		</BrowserRouter>
 	);
