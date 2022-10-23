@@ -15,102 +15,14 @@ export default function Index(){
             className="btn-simple-acai"
             onClick={async () => {
                 try {
-                    navigate("/VendaAcai")
+                    navigate("/Prova01")
                 } catch (err) {
                     
                 }
             }}>
-            AÇAI 
+            PROVA 01
         </button>
     </div>
-    </section>
-
-
-
-    <section className="sec-2-signo">
-    <div className="div-btn-signo">
-        <button
-            className="btn-simple-signo"
-            onClick={async () => {
-                try {
-                    navigate("/Signo")
-                } catch (err) {
-                    
-                }
-            }}>
-           LIBRA
-        </button>
-    </div>
-    
-
-    </section>
-
-
-    
-    <section className="sec-3-sorv">
-    <div className="div-btn-sorv">
-        <button
-            className="btn-simple-sorv"
-            onClick={async () => {
-                try {
-                    navigate("/Sorveteria")
-                } catch (err) {
-                    
-                }
-            }}>
-          SORVETERIA
-        </button>
-    </div>
-
-    
-        
-            <div className="div-btn-salario">
-        <button
-            className="btn-simple-salario"
-            onClick={async () => {
-                try {
-                    navigate("/SalarioLiquido")
-                } catch (err) {
-                    
-                }
-            }}>
-            SALARIO 
-        </button>
-    </div>
-    
-
-
-
-
-    
-    <div className="div-btn-viagem">
-        <button
-            className="btn-simple-viagem"
-            onClick={async () => {
-                try {
-                    navigate("/VIagem")
-                } catch (err) {
-                    
-                }
-            }}>
-            PARADAS
-        </button>
-    </div>
-    
-    <div className="div-btn-febre">
-        <button
-            className="btn-simple-febre"
-            onClick={async () => {
-                try {
-                    navigate("/febre")
-                } catch (err) {
-                    
-                }
-            }}>
-            FEBRE
-        </button>
-    </div>
-
     </section>
 
 
@@ -120,102 +32,85 @@ export default function Index(){
             className="btn-simple-acai"
             onClick={async () => {
                 try {
-                    navigate("/Orcamento")
+                    navigate("/Prova02")
                 } catch (err) {
                     
                 }
             }}>
-            ORÇAMENTO
+            PROVA 02
         </button>
     </div>
     </section>
 
-    <div className="div-btn-febre">
+
+    <section className="sec-1-acai">
+            <div className="div-btn-acai">
         <button
-            className="btn-simple-febre"
+            className="btn-simple-acai"
             onClick={async () => {
                 try {
-                    navigate("/Cinema")
+                    navigate("/Prova03")
                 } catch (err) {
                     
                 }
             }}>
-            INGRESSO
+            PROVA 03
         </button>
     </div>
-    <div className="div-btn-febre">
+    </section>
+
+
+    <section className="sec-1-acai">
+            <div className="div-btn-acai">
         <button
-            className="btn-simple-febre"
+            className="btn-simple-acai"
             onClick={async () => {
                 try {
-                    navigate("/naturais")
+                    navigate("/Prova04")
                 } catch (err) {
                     
                 }
             }}>
-            NUMEROS NATURAIS
+            PROVA 04
         </button>
     </div>
-
-    <div className="div-btn-febre">
+    </section>
+   
+ <section className="sec-1-acai">
+            <div className="div-btn-acai">
         <button
-            className="btn-simple-febre"
+            className="btn-simple-acai"
             onClick={async () => {
                 try {
-                    navigate("/linha")
+                    navigate("/Prova05")
                 } catch (err) {
                     
                 }
             }}>
-                LINHA
+            PROVA 05
         </button>
     </div>
+    </section>
 
-
-    <div className="div-btn-febre">
+    <section className="sec-1-acai">
+            <div className="div-btn-acai">
         <button
-            className="btn-simple-febre"
+            className="btn-simple-acai"
             onClick={async () => {
                 try {
-                    navigate("/Matriz")
+                    navigate("/Prova06")
                 } catch (err) {
                     
                 }
             }}>
-                MATRIZ
+            PROVA 06
         </button>
     </div>
+    </section>
+ 
 
 
-    <div className="div-btn-febre">
-        <button
-            className="btn-simple-febre"
-            onClick={async () => {
-                try {
-                    navigate("/Cafe")
-                } catch (err) {
-                    
-                }
-            }}>
-                CAFÉ
-        </button>
-    </div>
-
-
-
-    <div className="div-btn-febre">
-        <button
-            className="btn-simple-febre"
-            onClick={async () => {
-                try {
-                    navigate("/Juros")
-                } catch (err) {
-                    
-                }
-            }}>
-                JUROS
-        </button>
-    </div>
+ 
     </main>
     
     );
