@@ -1,5 +1,6 @@
 import { useState } from "react"
 import '../../../../src/common.scss'
+import { Media } from "../../../services"
 
 
 
@@ -8,6 +9,15 @@ export default function Alunos(){
     const[qtd, setQtd]= useState()
     const[aluno, setAluno]= useState([])
     const[nota, setNota]= useState([])
+    const[res, setRes] = useState();
+
+
+
+    function medias(){
+        const r = Media(nota)
+        setRes(r)
+
+    }
 
     function Alunos() {
         let aluno=[]
@@ -33,10 +43,14 @@ export default function Alunos(){
 
                 <div>
                     <p>Aluno {pos+1}</p>
-                    <input type="text" />
+                    <input type="text"  value= {item.nota}/>
                 </div>
 
             )}
+           </div>
+           <div>
+            <button onClick={medias}> CALCULAR</button>
+            <p>Média é {res}</p>
            </div>
 
         </main>
