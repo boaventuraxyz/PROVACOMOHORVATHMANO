@@ -107,6 +107,24 @@ export default function Index(){
         </button>
     </div>
     </section>
+
+
+
+    <section className="sec-1-acai">
+            <div className="div-btn-acai">
+        <button
+            className="btn-simple-acai"
+            onClick={async () => {
+                try {
+                    navigate("/Prova07")
+                } catch (err) {
+                    
+                }
+            }}>
+            PROVA 07
+        </button>
+    </div>
+    </section>
  
 
 

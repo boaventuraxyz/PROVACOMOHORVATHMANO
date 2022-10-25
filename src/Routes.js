@@ -13,12 +13,14 @@ import Linha from "./pages/prova4/Linha"
 import Matrizs from "./pages/prova4/matriz";
 import Cafe from "./pages/prova5/Cafe";
 import Juros from "./pages/prova6/Montante";
+import Alunos from "./pages/prova7/Alunos";
 import Prova01 from "./pages/prova1/home";
 import Prova02 from "./pages/prova2/home"
 import Prova03 from "./pages/prova3/home"
 import Prova04 from "./pages/prova4/home"
 import Prova05 from "./pages/prova5/home"
 import Prova06 from "./pages/prova6/home"
+import Prova07 from "./pages/prova7/home"
 
 export default function Index() {
 	return (
@@ -38,12 +40,14 @@ export default function Index() {
 				<Route path='/Matriz' element={<Matrizs/>} />
 				<Route path='/Cafe' element={<Cafe/>} />
 				<Route path='/Juros' element={<Juros/>} />
+				<Route path='/Alunos' element={<Alunos/>} />
 				<Route path='/Prova01' element={<Prova01/>} />
 				<Route path='/Prova02' element={<Prova02/>} />
 				<Route path='/Prova03' element={<Prova03/>} />
 				<Route path='/Prova04' element={<Prova04/>} />
 				<Route path='/Prova05' element={<Prova05/>} />
 				<Route path='/Prova06' element={<Prova06/>} />
+				<Route path='/Prova07' element={<Prova07/>} />
 			</Routes>
 		</BrowserRouter>
 	);
